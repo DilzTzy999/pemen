@@ -1,0 +1,60 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>💳 Satanic Payment</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    .thumbnail {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto 20px;
+    }
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="satan-canvas"></canvas>
+
+  <!-- THUMBNAIL -->
+  <img src="media/thumbnail.png" alt="Thumbnail" class="thumbnail" />
+
+  <div class="container">
+    <h1>🔥 Metode Pembayaran</h1>
+    <div class="buttons">
+      <button id="btn-dana" style="background:#0057FF">DANA</button>
+      <button id="btn-ovo" style="background:#8B00FF">OVO</button>
+      <button id="btn-gopay" style="background:#00AEEF">GOPAY</button>
+      <button id="btn-qris" style="background:#00B14F">QRIS</button>
+    </div>
+
+    <div id="info"></div>
+    <button id="copy-btn">Salin Nomor</button>
+
+    <div class="social">
+      <a href="https://wa.me/6289696488647" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://t.me/username_anda" target="_blank"><i class="fab fa-telegram"></i></a>
+    </div>
+  </div>
+
+  <!-- AUDIO LOCAL -->
+  <audio autoplay loop>
+    <source src="media/phonk.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung audio HTML5.
+  </audio>
+
+  <script src="script.js"></script>
+
+  <!-- FIX AUTOPLAY DI MOBILE -->
+  <script>
+    window.addEventListener('click', () => {
+      const audio = document.querySelector('audio');
+      if (audio.paused) audio.play();
+    });
+  </script>
+</body>
+</html>
